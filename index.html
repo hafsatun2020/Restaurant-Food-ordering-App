@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Font Awesome CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Google Fonts -->
+	
+    </head>
+    <body>
+        <header>
+            <h2>Jimmy's Dinner</h2>
+            <p>The best burgers and pizzas in town.</p>
+        </header>
+        <div id="btn-container">
+                <button type="button" class="btns" data-id="all">ALL</button>
+                <button type="button" class="btns" data-id="breakfast">Breakfast</button>
+                <button type="button" class="btns" data-id="dinner">Dinner</button>
+                <button type="button" class="btns" data-id="lunch">Lunch</button>
+                <button type="button" class="btns" data-id="drinks">Drinks</button>
+            </div>
+            
+        <main>
+            
+            <div id="menu-feed">
+
+                <!--
+                     <div id="menu-items" class="menu-items-container">
+                 
+                    <div class="item-container">
+                        <div class="emoji">${item.emoji}</div>
+                        <div id="item-inner">
+                            <h4 id="${item.id}">${item.name}</h4>
+                            <p id="${item.id}">${item.ingredients}</p>
+                            <p id="${item.id}">$${item.price}</p>
+                        </div>
+                    </div>
+                    <button id="add" data-${item.name}="${item.id}">+</button>
+                </div>
+                -->
+               
+            </div>
+                <!--payment summarry div here-->
+            <div id="order-summary">
+                <h3>Your Order</h3>
+                <!-- return order here-->
+                <div id="order-summary-inner">
+                </div>
+                <div id="sum">
+                <div class="bottom-sum"><p>Total Price</p></div> 
+                <p id="Total">0</p>
+                </div>
+                <input type="submit" name="paymentBtn" id="payment-btn" value="Complete Order">
+            </div>
+                 <!--
+                    <div id="order-summary-inner">
+                    <div class="left-div"><p>${item.name}</p><button type="reset"></button></div> 
+                        <p>${item.price}</p>
+                    </div>
+                -->
+                
+        </main>
+        
+
+
+        <div id="payment-details">
+            
+            
+                <form id="card-form">
+                    <h2>Enter Card Details</h2>
+            <input type="text" name="FullName" id="full-name" placeholder="Enter Full Name" required >
+            <input type="number"  name="card-number" id="card-number" placeholder="enter your card number" required >
+            <input type="number" name="card-cvv" id="card-cvv" placeholder="CVV" required >
+            <input type="submit" value="Pay" id="pay" >
+                </form>
+        </div>
+       
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
