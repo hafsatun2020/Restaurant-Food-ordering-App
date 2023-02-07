@@ -30,7 +30,7 @@ main {
 header {
     display: block;
     background-image: url("./images/bg.svg");
-    background-size: cover;
+    background-size: contain;
     color: white;
     margin: 0 auto 0 auto;
     width: 60vw;
@@ -244,7 +244,12 @@ width: 100%;
 
 @media (max-width: 500px){
     main, header, #btn-container{
-        width: 90vw;
+        width: 100vw;
+    }
+
+    header{
+        background-size: 100% 100%;
+        background-repeat: round;
     }
 
     
@@ -254,14 +259,14 @@ width: 100%;
 
 
     main, header, #btn-container{
-        width: 90vw;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         padding: 0;
         
     }
     header{
-        background-size: cover;
+       background-size: 100% 100%;
         background-repeat: no-repeat;
         text-align: center;
         padding: 0%;
