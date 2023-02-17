@@ -18,11 +18,11 @@ export const menuArray = [
         id: 1
     },
         {
-        name: "Beer",
+        name: "Hibiscus",
         category: "drinks",
-        ingredients: ["grain, hops, yeast, water"],
+        ingredients: ["hibiscus flower, sugar, water"],
         price: 12,
-        emoji: "🍺",
+        emoji: "🍷",
          quantity: 0,
         id: 2
     },
